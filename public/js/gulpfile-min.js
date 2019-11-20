@@ -1,0 +1,1 @@
+const gulp=require("gulp"),minify=require("gulp-minify");gulp.task("minify",()=>gulp.src("*.js",{allowEmpty:!0}).pipe(minify({noSource:!0})).pipe(gulp.dest("public/js"))),gulp.task("default",gulp.series(["minify"]));
